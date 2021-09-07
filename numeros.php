@@ -36,4 +36,8 @@ class numero
         }
         return "es un numero grande.";
     }
+
+    public function inputPhp(){
+        return (is_string($this->numero)) ? " El valor ingresado no es numerico" : "";
+    }
 }

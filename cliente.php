@@ -6,5 +6,6 @@ $numero = $_POST['numero'];
 $numero = new numero($numero);
 $parametros = $numero->numeroValido() ?
     $numero->parOimpar() . " y " . $numero->numeroGrande() :
-    "no es un numero valido.";
+    "no es un numero valido." .
+    $numero->inputPhp();
 echo "El numero ingresado " . $parametros;
